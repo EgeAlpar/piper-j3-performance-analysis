@@ -1,0 +1,12 @@
+component,mass_g,status
+printed_airframe,377,measured
+motor,63,measured
+esc,40,measured
+servos,60,measured
+receiver,15,measured
+propeller,11,measured
+landing_gear,13,measured
+battery,115,measured
+wheels,20,estimated
+pushrods,15,estimated
+glue,12,estimated
