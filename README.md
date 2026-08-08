@@ -71,7 +71,7 @@ Planned project phases:
 
 ## Current Status
 
-Python analysis version 0.7 is currently complete.
+Python analysis version 0.8 is currently complete.
 
 Version 0.7 compares the 500 g manufacturer reference aircraft with the
 approximately 741 g current build estimate. It uses one shared maximum-lift
@@ -82,13 +82,18 @@ The inferred effective maximum lift coefficient is a modelling value derived
 from manufacturer reference mass and stall speed. It is not measured LHK12
 airfoil data.
 
+Version 0.8 adds a required lift coefficient vs airspeed plot for both
+aircraft masses. This shows that the heavier aircraft requires a higher lift
+coefficient at the same airspeed and reaches the inferred maximum-lift limit
+at a higher estimated stall speed.
+
 Aircraft construction and measurement are still in progress.
 
 Future work will include:
 
 - Final aircraft mass measurement
 - Component mass dataset
-- Required lift coefficient vs airspeed analysis
+- Replacement of estimated component masses with final measurements
 - Static thrust testing
 - Current and power measurements
 - Thrust-to-weight analysis
