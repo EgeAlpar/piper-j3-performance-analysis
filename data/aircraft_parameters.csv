@@ -1,0 +1,7 @@
+parameter,value,unit,source
+reference_mass_g,500,g,manufacturer
+reference_stall_speed_kmh,15.0,km/h,manufacturer
+max_takeoff_mass_g,700,g,manufacturer
+wing_area_dm2,18.15,dm^2,manufacturer
+air_density_kg_m3,1.225,kg/m^3,modelling_assumption
+gravity_m_s2,9.81,m/s^2,physical_constant

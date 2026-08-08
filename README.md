@@ -71,7 +71,7 @@ Planned project phases:
 
 ## Current Status
 
-Python analysis version 0.8 is currently complete.
+Python analysis version 0.9 is currently complete.
 
 Version 0.7 compares the 500 g manufacturer reference aircraft with the
 approximately 741 g current build estimate. It uses one shared maximum-lift
@@ -86,6 +86,12 @@ Version 0.8 adds a required lift coefficient vs airspeed plot for both
 aircraft masses. This shows that the heavier aircraft requires a higher lift
 coefficient at the same airspeed and reaches the inferred maximum-lift limit
 at a higher estimated stall speed.
+
+Version 0.9 moves aircraft parameters into
+`data/aircraft_parameters.csv`. Each parameter includes its value, unit and
+source classification. Manufacturer reference data, modelling assumptions
+and physical constants are therefore kept separate from the component mass
+budget and from each other.
 
 Aircraft construction and measurement are still in progress.
 
