@@ -43,6 +43,10 @@ The current Python tool calculates:
 - Mass increase compared with reference aircraft
 - MTOW difference
 - Estimated stall speed
+- Reference and current aircraft weight
+- Reference and current wing loading
+- An inferred effective maximum lift coefficient
+- A reference-vs-current maximum-lift comparison plot
 
 Current calculated results:
 
@@ -67,7 +71,16 @@ Planned project phases:
 
 ## Current Status
 
-Python analysis version 0.2 is currently complete.
+Python analysis version 0.7 is currently complete.
+
+Version 0.7 compares the 500 g manufacturer reference aircraft with the
+approximately 741 g current build estimate. It uses one shared maximum-lift
+boundary inferred from manufacturer reference data and shows how the higher
+required lift increases the estimated stall speed.
+
+The inferred effective maximum lift coefficient is a modelling value derived
+from manufacturer reference mass and stall speed. It is not measured LHK12
+airfoil data.
 
 Aircraft construction and measurement are still in progress.
 
@@ -75,8 +88,7 @@ Future work will include:
 
 - Final aircraft mass measurement
 - Component mass dataset
-- Lift calculations
-- Lift vs airspeed plots
+- Required lift coefficient vs airspeed analysis
 - Static thrust testing
 - Current and power measurements
 - Thrust-to-weight analysis
