@@ -67,6 +67,8 @@ python v1.0/aircraft_analyzer.py
 The program reads the project data from `data/` and saves generated figures
 under `plots/`.
 
+Running the analysis does not modify the source CSV data files.
+
 Current calculated results:
 
 - Estimated takeoff mass: 741 g
