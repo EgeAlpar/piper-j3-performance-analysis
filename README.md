@@ -47,6 +47,25 @@ The current Python tool calculates:
 - Reference and current wing loading
 - An inferred effective maximum lift coefficient
 - A reference-vs-current maximum-lift comparison plot
+- Required lift coefficient vs airspeed comparison
+- CSV structure, value and source validation
+
+## Installation and Use
+
+Install the required Python packages from the project root:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Run the current stable analysis:
+
+```bash
+python v1.0/aircraft_analyzer.py
+```
+
+The program reads the project data from `data/` and saves generated figures
+under `plots/`.
 
 Current calculated results:
 
@@ -71,7 +90,7 @@ Planned project phases:
 
 ## Current Status
 
-Python analysis version 0.9 is currently complete.
+Python analysis version 1.0 is currently complete.
 
 Version 0.7 compares the 500 g manufacturer reference aircraft with the
 approximately 741 g current build estimate. It uses one shared maximum-lift
@@ -92,6 +111,12 @@ Version 0.9 moves aircraft parameters into
 source classification. Manufacturer reference data, modelling assumptions
 and physical constants are therefore kept separate from the component mass
 budget and from each other.
+
+Version 1.0 adds validation for required CSV files, columns, parameters,
+source classifications, mass status values and numerical inputs. Invalid data
+now stops the analysis with a specific error instead of silently producing an
+unreliable result. Dependency versions and run instructions are also included
+for reproducibility.
 
 Aircraft construction and measurement are still in progress.
 
